@@ -9,7 +9,7 @@ function RootNavigator() {
     <Stack.Navigator
       screenOptions={({route, navigation}) => {
         return {
-          headerShown: route.name !== 'Home',
+          headerShown: !['Home'].includes(route.name) ? true : false,
         };
       }}>
       {React.Children.toArray(
