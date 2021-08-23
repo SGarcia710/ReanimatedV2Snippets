@@ -10,4 +10,5 @@ type RootStackParamList = {
   CustomBottomTabNavigator: undefined;
   ColorInterpolation: undefined;
   LiquidSwipe: undefined;
+  MaskedView: undefined;
 };

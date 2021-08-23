@@ -10,6 +10,7 @@ import {
   ColorInterpolation,
   CustomBottomTabNavigator,
   LiquidSwipe,
+  MaskedView,
 } from '@/Screens';
 import {FunctionComponent} from 'react';
 
@@ -25,6 +26,7 @@ interface Screens {
   CustomBottomTabNavigator: Screen;
   ColorInterpolation: Screen;
   LiquidSwipe: Screen;
+  MaskedView: Screen;
 }
 
 interface Screen {
@@ -35,6 +37,7 @@ interface Screen {
   description?: string;
 }
 
+// https://www.flaticon.es/icono-gratis/origami_4568840?related_id=4568840&origin=pack
 const SCREENS: {[key in keyof Screens]: Screen} = {
   Home: {
     name: 'Home',
@@ -115,6 +118,13 @@ const SCREENS: {[key in keyof Screens]: Screen} = {
     description:
       'Check how you can achieve the beautiful effect Liquid Swipe by Cuberto',
   },
+  MaskedView: {
+    name: 'MaskedView',
+    component: MaskedView,
+    title: 'Masked View',
+    image: 'https://image.flaticon.com/icons/png/512/4568/4568840.png',
+    description: 'Learn how you can deal with Masked Views',
+  },
 };
 
 interface ScreenGroup {
@@ -151,7 +161,11 @@ const SCREEN_GROUPS: {
   IntermediateExamples: {
     name: 'IntermediateExamples',
     label: 'Intermediate Examples',
-    screens: [SCREENS.Accordion, SCREENS.CustomBottomTabNavigator],
+    screens: [
+      SCREENS.Accordion,
+      SCREENS.CustomBottomTabNavigator,
+      SCREENS.MaskedView,
+    ],
   },
   AdvancedExamples: {
     name: 'AdvancedExamples',

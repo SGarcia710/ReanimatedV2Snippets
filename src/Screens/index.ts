@@ -9,3 +9,4 @@ export {default as Accordion} from './Accordion';
 export {default as CustomBottomTabNavigator} from './CustomBottomTabNavigator';
 export {default as BottomSheet} from './BottomSheet';
 export {default as LiquidSwipe} from './LiquidSwipe';
+export {default as MaskedView} from './MaskedView';
